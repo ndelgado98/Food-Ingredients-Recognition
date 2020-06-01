@@ -20,9 +20,7 @@
 
 There are several cooking apps or websites available today, that are used to find recipes based on some keyword, like name of the food ingredient or type of cuisine, etc. These apps are mindful of the needs and interests of their users, but they fail at identifying their user's constraints, i.e., limited number of food ingredients. In such cases, users find themselves shopping for ingredients or they decide to substitute the missing ingredient with something else. To help users avoid such adjustments, image recognition can be employed to identify food ingredients that are already available at their disposal and recommend them recipes based on those ingredients.
 
-![enter image description here](https://drive.google.com/open?id=1c6dMZ8iRXau2ZD1lVV2u3TdZljqrev04)
-
-
+![enter image description here](https://drive.google.com/file/d/1c6dMZ8iRXau2ZD1lVV2u3TdZljqrev04/view?usp=sharing)
 
 ### Solution
 
