@@ -5,7 +5,6 @@
 ## Table of Contents
 
 
-
    1. Problem Statement
    2. Future Improvements
    3. Repository Navigation
@@ -16,80 +15,57 @@
    
 
 
+
 ### Problem Statement
 
 There are several cooking apps or websites available today, that are used to find recipes based on some keyword, like name of the food ingredient or type of cuisine, etc. These apps are mindful of the needs and interests of their users, but they fail at identifying their user's constraints, i.e., limited number of food ingredients. In such cases, users find themselves shopping for ingredients or they decide to substitute the missing ingredient with something else. To help users avoid such adjustments, image recognition can be employed to identify food ingredients that are already available at their disposal and recommend them recipes based on those ingredients.
 
-![enter image description here](https://imgur.com/6sedSh6)
+
+Food recognition is an emerging topic in the field of computer vision. The recent interest of the research community in this area is justified by the rise in popularity of food diary applications.
+As a stakeholder, I want to build a integrated system, where it can recognises ingredients and therefore has the capacity to recomend recipes based on the recognised food.
+
+I tackle the problem of food ingredients recognition as a multi-class learning problem. I propose a method for adapting a highly performing state of the art CNN in order to act as a multi-class predictor for learning food ingredients in terms of their nature.
+I prove that my model is able to give, given a picture, predict its group of ingredients..
+
+-----Furthermore, I prove that a model trained with a high variability of recipes and ingredients is able to generalise better on new data.--------
+
+As a  future work I want to create a recomend system able to recommend recipes based on the recognised ingredients and for that I will need an accurate image recognition system..
+
+
+![] (Data/screen.png)
 
 ### Solution
 
 Currently the system is a web application that performs image recognition on the uploaded images and recommends recipes juthat contains the recognized ingredients. We built a convolutional neural network model for image recognition to identify five categories of food ingredients and achieved, 62.9% accuracy rate. The recommendation system uses the labels of the identified images to display a list of recipes that contains most of the identified ingredients.
 
+As such, the plan is to construct deep learning model (convolutional neural network) to classify food ingredients images by three groups 
 
 
-###  Repository  Navigation
+
+###  Repository Navigation
 
    * Notebooks
    
      * Data Understanding / Modeling.ipynb
+
      * Webscrapping.ipynb
 
-   * Data: All the CSV files can be found in the Data folder. 
+   * Data
      
-     * apple.csv
-     * asparagus.csv
-     * aubergine.csv 
-     * bacon.csv
-     * beetroot.csv 
-     * black_beans.csv
-     * black_eyed_peas.csv
-     * broccoli.csv
-     * brussel_sprouts.csv
-     * butternut_squash.csv
-     * cabbage.csv
-     * cannelloni.csv
-     * carrot.csv
-     * cauliflower.csv
-     * chicken_breast.csv
-     * chicken_whole.csv
-     * chickpeas.csv
-     * cucumber.csv
-     * eggs_brown.csv
-     * eggs_white.csv
-     * fresh_pork_chop.csv
-     * fresh_raw_beef.csv
-     * green_pepper.csv
-     * ground_beef.csv
-     * lamb.csv
-     * lasagne.csv
-     * lentils.csv
-     * lettuce.csv
-     * mackerel.csv
-     * mushrooms.csv
-     * mussels.csv
-     * onions.csv
-     * oyster.csv
-     * penne.csv
-     * pork_belly.csv
-     * pork_ribs.csv
-     * ravioli.csv
-     * red_beans.csv
-     * red_pepper.csv
-     * salmon.csv
-     * sardines.csv
-     * shrimps.csv
-     * soybeans.csv
-     * spaghetti.csv
-     * sweet_potato.csv
-     * tomato.csv
-     * trout.csv
-     * tuna.csv
-     * white_potato.csv
-     * white_rice.csv
-     * zucchini.csv
-   
-   *  Split_Sets: Data set splitted in train, validation and test sets.
+     * Data_CSV
+
+     * Ingredients
+       
+       * Fruits & Vegetables
+       * Grains
+       * Meat
+
+     * Split_Sets
+       
+       * train
+       * test
+       * validation
+
    
    * Presentation: Folder with the project's presentation
    
