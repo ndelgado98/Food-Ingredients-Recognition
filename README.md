@@ -20,6 +20,8 @@ In future, the baseline model will be expanded upon in order to achieve a greate
 
 
 
+
+
 ###  Repository Navigation
 
    * Notebooks
@@ -45,7 +47,7 @@ In future, the baseline model will be expanded upon in order to achieve a greate
        * validation
 
    
-   * Presentation: Folder with the project's presentation
+   * Presentation
    
      * presentation.pdf
    
