@@ -1,44 +1,22 @@
 # Food-Ingredients-Recognition
-
-
-
-## Table of Contents
-
-
-   1. Problem Statement
-   2. Future Improvements
-   3. Repository Navigation
-   4. Technologies and Libraries Used
-   5. Modelin
-   6. Evaluation
-   7. References
    
-
 
 
 ### Problem Statement
 
-There are several cooking apps or websites available today, that are used to find recipes based on some keyword, like name of the food ingredient or type of cuisine, etc. These apps are mindful of the needs and interests of their users, but they fail at identifying their user's constraints, i.e., limited number of food ingredients. In such cases, users find themselves shopping for ingredients or they decide to substitute the missing ingredient with something else. To help users avoid such adjustments, image recognition can be employed to identify food ingredients that are already available at their disposal and recommend them recipes based on those ingredients.
+Food recognition is an emerging topic in the field of computer vision and the interest in this area is justified by the rise in popularity of food diary applications.
+As a stakeholder, I want to build a integrated system, which has the capability to recognise ingredients and recomend recipes based on the recognised items, for this reason, I want to build a very accurate image recognition algorithm.
+Therefore, I tackle the problem of food ingredients recognition as a multi-class learning problem. I propose a method for adapting a highly performing state of the art CNN in order to act as a multi-class predictor for learning food ingredients in terms of their nature.
+I plan to create a model that is able to give, given a picture, a prediction of its group of ingredients..
+
+The models were trained and validated using a set of approximately 5,530 images of 63 food ingredients primarily obtained from a combination of sources, divided by 3 main groups Meat, Grains and Fruits/Vegetables.
+These three groups represent the main part of the food pyramid and are essential for the most part of the recipes.
+
+In future, the baseline model will be expanded upon in order to achieve a greater level of accuracy and the classification model will be focus on classifying each ingredient on its own representation instead of by group.
 
 
-Food recognition is an emerging topic in the field of computer vision. The recent interest of the research community in this area is justified by the rise in popularity of food diary applications.
-As a stakeholder, I want to build a integrated system, where it can recognises ingredients and therefore has the capacity to recomend recipes based on the recognised food.
 
-I tackle the problem of food ingredients recognition as a multi-class learning problem. I propose a method for adapting a highly performing state of the art CNN in order to act as a multi-class predictor for learning food ingredients in terms of their nature.
-I prove that my model is able to give, given a picture, predict its group of ingredients..
-
------Furthermore, I prove that a model trained with a high variability of recipes and ingredients is able to generalise better on new data.--------
-
-As a  future work I want to create a recomend system able to recommend recipes based on the recognised ingredients and for that I will need an accurate image recognition system..
-
-
-![] (Data/screen.png)
-
-### Solution
-
-Currently the system is a web application that performs image recognition on the uploaded images and recommends recipes juthat contains the recognized ingredients. We built a convolutional neural network model for image recognition to identify five categories of food ingredients and achieved, 62.9% accuracy rate. The recommendation system uses the labels of the identified images to display a list of recipes that contains most of the identified ingredients.
-
-As such, the plan is to construct deep learning model (convolutional neural network) to classify food ingredients images by three groups 
+![](./Data/screen.png)
 
 
 
@@ -74,31 +52,26 @@ As such, the plan is to construct deep learning model (convolutional neural netw
    * README.md
    
 
-### Technologies and Libraries Used
--   Python
--   Pandas
--   Numpy
--   Matplotlib
--   Scikit-learn
--   Skimage
--   Cv2
--   Os
--   Keras
--   Tensorflow
--   Urllib
--   Pil
--   Requests
--   BeautifulSoup
 
 
 ### Modelling
 
 In order to carry out the modelling, I split the final dataset into 3 subsets. Train (3587 images), Validation(471 images) and Test (544 images).
+Baseline model consists of four convolution blocks with a max pool layer in each of them. There's a fully connected layer with 8 units on top of it that is activated by a relu activation function and three units activated by a softmax activation function.
+For the second model, I take a new approach, because the baseline model shows a good performing, I want to see if it is possible with more agumentation arguments get even better results.
+For the third model and I based my approach on the previous models results. This time, the model won't have augmentation, except the rescale, and use more epochs since the first model showed an increased performance over the time. Therefore, I want to see if it is possible to extrapolate the baseline model's accuracy with a bigger range of epochs.
 
 
 ### Evaluation
 
-Following the additional economic data for Portugal and Eurozone, our model performance increased to 90.5%. Using hyperparameter tuning with Sci-Kit learn's GridSearchCV function, we were able to increase the performance to 92.8%. As it stands, our best performing model is the Logisitic Regression model using GridSearchCV.
+After analising the three models, the model that shows better performance is the baseline model, more stable, high accuracy and low overfitting.
+To evaluate the winning model, I used Average precision because gives the average precision at all such possible thresholds and Precision-Recall metric. In this project, is an useful measure of success of prediction because the classes are imbalanced and I am not aiming any specific decision threshold.
+Wiht an average precison of 0.65 and presicion-recall of class 0 = 0.83 / class 1 = 1 / class 2 = 0.25, I considered the created model good enough  to be integrated in a future recomendation system.
+
+### Contact Info
+
+For any queries or additional information, please email napd.65@gmail.com
+
 
 ### References
 
@@ -107,3 +80,8 @@ Following the additional economic data for Portugal and Eurozone, our model perf
 -  Multi-Class Classification Tutorial with the Keras Deep Learning Library: [here](https://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/)
 -  Food Ingredients Recognition Through Multi-label Learning: [here](https://link.springer.com/chapter/10.1007/978-3-319-70742-6_37)
 -  Mobile Food Recognition with an Extreme Deep Tree:[here](https://dl.acm.org/doi/10.1145/2967413.2967428)
+
+
+### Image Disclaimer
+
+All pictures copyright to their respective owner(s). I do not claim ownership of any of the pictures displayed on this project unless stated otherwise. I do not knowingly intend or attempt to offend or violate any copyright or intellectual property rights of any entity. Some images used on this project are taken from the web and believed to be in the public domain.
