@@ -21,7 +21,7 @@ The key players in the market by Google Play Store users are Tasty (5 million), 
 
 
 
-![](./Data/screen.png)
+![](./Data/images/screen.png)
 
    
    
@@ -38,7 +38,7 @@ The urls of all images were converted in CSV files and grouped by ingredients. U
 Because all the data set homogeneous, *i. e.* similiar to each other, I didnt have too much to explore. The only exception was the finding of class imbalance in the data.
 
 
-![](./Data/data_preparation.png)
+![](./Data/images/data_preparation.png)
 
 
 
@@ -50,7 +50,8 @@ For the second model, I take a new approach, because the baseline model shows a 
 For the third model and I based my approach on the previous models results. This time, the model won't have augmentation, except the rescale, and use more epochs since the first model showed an increased performance over the time. Therefore, I want to see if it is possible to extrapolate the baseline model's accuracy with a bigger range of epochs.
 
 
-![](./Data/baseline_accuracy.png) ![](./Data/baseline_loss.png)
+![](./Data/images/baseline_accuracy.png)
+![](./Data/images/baseline_loss.png)
 
 
 
@@ -61,7 +62,7 @@ To evaluate the winning model, I used Average precision because gives the averag
 Wiht an average precison of 0.65 and presicion-recall of class 'meat' = 0.83 / class 'fruits & vegetables' = 1 / class 'grains' = 0.25, I considered the created model good enough  to be integrated in a future recomendation system.
 
 
-![](./Data/average_precision.png)
+![](./Data/images/average_precision.png)
 
 
 
