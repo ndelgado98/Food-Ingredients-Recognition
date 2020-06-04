@@ -4,10 +4,9 @@
 
 ## Introduction
 
-Food recognition is an emerging topic in the field of computer vision and the interest in this area is justified by the rise in popularity of food diary applications.
 I want to build a integrated system, which has the capability to recognise ingredients and recomend recipes based on the recognised items, for this reason, I have to build a very accurate image recognition algorithm, first.
 Therefore, I tackle the problem of food ingredients recognition as a multi-class learning problem. I propose a method for adapting a highly performing state of the art Convolutional Neural Network architecture in order to act as a multi-class predictor for learning food ingredients in terms of their nature.
-I plan to create a model that is able to give, given a picture, a prediction of its group of ingredients..
+I plan to create a model that is able to give, given a picture, a prediction of its group of ingredients.
 
 
 ## Data Science Process
@@ -21,7 +20,7 @@ The key players in the market by Google Play Store users are Tasty (5 million), 
 
 
 
-![](./Data/images/screen.png)
+![](./Data/images/frank_case_study.png)
 
    
    
@@ -31,6 +30,8 @@ The models were trained and validated using a set of approximately 5,530 images 
 These three groups represent the main part of the food pyramid and are essential for the most part of the recipes.
 Using Google Imgage search, it was possible to obtain clear images of ingredients and because I needed a huge number of images, I had to use SerpWow, specialized website in web-scraping, for each image's url.
 
+![](./Data/images/screen.png)
+
 
 ### Data Preparation
 
@@ -38,7 +39,7 @@ The urls of all images were converted in CSV files and grouped by ingredients. U
 Because all the data set homogeneous, *i. e.* similiar to each other, I didnt have too much to explore. The only exception was the finding of class imbalance in the data.
 
 
-![](./Data/images/data_preparation.png)
+![](./Data/images/d_preparation.png)
 
 
 
@@ -50,8 +51,7 @@ For the second model, I take a new approach, because the baseline model shows a 
 For the third model and I based my approach on the previous models results. This time, the model won't have augmentation, except the rescale, and use more epochs since the first model showed an increased performance over the time. Therefore, I want to see if it is possible to extrapolate the baseline model's accuracy with a bigger range of epochs.
 
 
-![](./Data/images/baseline_accuracy.png)
-![](./Data/images/baseline_loss.png)
+![](./Data/images/train_accuracy_loss.png)
 
 
 
@@ -62,7 +62,7 @@ To evaluate the winning model, I used Average precision because gives the averag
 Wiht an average precison of 0.65 and presicion-recall of class 'meat' = 0.83 / class 'fruits & vegetables' = 1 / class 'grains' = 0.25, I considered the created model good enough  to be integrated in a future recomendation system.
 
 
-![](./Data/images/average_precision.png)
+![](./Data/images/avg_precision.png)
 
 
 
@@ -112,7 +112,7 @@ For any queries or additional information, please email napd.65@gmail.com
 -  Mobile Food Recognition with an Extreme Deep Tree:[here](https://dl.acm.org/doi/10.1145/2967413.2967428)
 -  Food Pyramid: [here](https://www.safefood.eu/Healthy-Eating/The-Food-Pyramid-and-The-Eatwell-Guide/The-Food-Pyramid.aspx)
 -  Google Play Store: [here](https://play.google.com/store?hl=en)
-
+-  Frank Lee:[here](https://www.thefrankdesigns.com/sidechef-case-study/)
 
 ### Image Disclaimer
 
