@@ -43,7 +43,7 @@ Because all the data set homogeneous, *i. e.* similiar to each other, I didnt ha
 
 
 
-### Modelling
+### Modeling
 
 In order to carry out the modelling, I split the final dataset into 3 subsets. Train (3587 images), Validation(471 images) and Test (544 images).
 Baseline model consists of four convolution blocks with a max pool layer in each of them. There's a fully connected layer with 8 units on top of it that is activated by a relu activation function and three units activated by a softmax activation function.
@@ -55,7 +55,7 @@ For the third model and I based my approach on the previous models results. This
 
 
 
-## Evaluation
+### Evaluation
 
 After analising the three models, the model that shows better performance is the baseline model, more stable, high accuracy and low overfitting.
 To evaluate the winning model, I used Average precision because gives the average precision at all such possible thresholds and Precision-Recall metric. In this project, is an useful measure of success of prediction because the classes are imbalanced and I am not aiming any specific decision threshold.
@@ -66,12 +66,12 @@ Wiht an average precison of 0.65 and presicion-recall of class 'meat' = 0.83 / c
 
 
 
-### Contact Info
+## Contact Info
 
 For any queries or additional information, please email napd.65@gmail.com
 
 
-###  Repository Navigation
+## Repository Navigation
 
    * Notebooks
    
@@ -103,7 +103,7 @@ For any queries or additional information, please email napd.65@gmail.com
    * README.md
    
    
-### References
+## References
 
 -  SerpWow: [here](https://serpwow.com/)
 -  Google Images: [here](https://www.google.com/imghp?hl=en)
@@ -114,6 +114,6 @@ For any queries or additional information, please email napd.65@gmail.com
 -  Google Play Store: [here](https://play.google.com/store?hl=en)
 -  Frank Lee:[here](https://www.thefrankdesigns.com/sidechef-case-study/)
 
-### Image Disclaimer
+## Image Disclaimer
 
 All pictures copyright to their respective owner(s). I do not claim ownership of any of the pictures displayed on this project unless stated otherwise. I do not knowingly intend or attempt to offend or violate any copyright or intellectual property rights of any entity. Some images used on this project are taken from the web and believed to be in the public domain.
