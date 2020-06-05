@@ -29,6 +29,8 @@ The key players in the market by Google Play Store users are Tasty (5 million), 
 The models were trained and validated using a set of approximately 5,530 images of 63 food ingredients primarily obtained from a combination of sources, divided by 3 main groups Meat, Grains and Fruits/Vegetables.
 These three groups represent the main part of the food pyramid and are essential for the most part of the recipes.
 Using Google Imgage search, it was possible to obtain clear images of ingredients and because I needed a huge number of images, I had to use SerpWow, specialized website in web-scraping, for each image's url.
+The majority of the images used on the project had watermarks on them. It wasn't possible to categorise the watermarking based upon whether distortion occurred or not in the underlying data. However, the noise introduced when embedding watermarks should not affect the usability of the data.
+For copyright issues, this project displays an Image Disclaimer.
 
 ![](./Data/images/screen.png)
 
@@ -113,7 +115,8 @@ For any queries or additional information, please email napd.65@gmail.com
 -  Food Pyramid: [here](https://www.safefood.eu/Healthy-Eating/The-Food-Pyramid-and-The-Eatwell-Guide/The-Food-Pyramid.aspx)
 -  Google Play Store: [here](https://play.google.com/store?hl=en)
 -  Frank Lee:[here](https://www.thefrankdesigns.com/sidechef-case-study/)
+-  The Verge:[here](https://www.theverge.com/2017/8/18/16162108/google-research-algorithm-watermark-removal-photo-protection)
 
 ## Image Disclaimer
 
-All pictures copyright to their respective owner(s). I do not claim ownership of any of the pictures displayed on this project unless stated otherwise. I do not knowingly intend or attempt to offend or violate any copyright or intellectual property rights of any entity. Some images used on this project are taken from the web and believed to be in the public domain.
+All images copyright to their respective owner(s). I do not claim ownership of any of the picturimages displayed on this project unless stated otherwise. I do not knowingly intend or attempt to offend or violate any copyright or intellectual property rights of any entity. Some images used on this project are taken from the web and believed to be in the public domain.
